@@ -28,6 +28,7 @@ console.log("-----Good news! We found a bigger dinner table.");
 dinnerGuests.unshift("Ather");
 dinnerGuests.splice(2, 0, "Umair");
 dinnerGuests.push("Noman");
+
 // Print invitations for the new guests
 console.log("--- Additional Invitations ---");
 for (let i = 0; i < dinnerGuests.length; i++) {
@@ -42,12 +43,13 @@ console.log(
 
 console.log(`You are inviting ${dinnerGuests.length} people to dinner.`);
 
-for (let j = 0; j < dinnerGuests.length; j++) {
-  if (dinnerGuests.length > 0) {
-    const removedGuest: string = dinnerGuests.pop()!;
-    console.log(`Sorry, ${removedGuest}, we can't invite you to dinner.`);
-  }
+let guestNumber: number = 2;
+
+if (dinnerGuests.length > guestNumber) {
+  dinnerGuests.splice(guestNumber);
 }
+
+console.log("Final guest list:", dinnerGuests);
 
 for (let j = 0; j < dinnerGuests.length; j++) {
   console.log(`Dear ${dinnerGuests[j]}, you are still invited to dinner.`);
