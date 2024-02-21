@@ -26,7 +26,7 @@ for (let i = 0; i < dinnerGuests.length; i++) {
 console.log("Unfortunately, the new dinner table won't arrive in time, and we can only invite two people for dinner.");
 console.log(`You are inviting ${dinnerGuests.length} people to dinner.`);
 for (let j = 0; j < dinnerGuests.length; j++) {
-    if (dinnerGuests.length > 2) {
+    if (dinnerGuests.length > 0) {
         const removedGuest = dinnerGuests.pop();
         console.log(`Sorry, ${removedGuest}, we can't invite you to dinner.`);
     }

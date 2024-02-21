@@ -1,8 +1,8 @@
 "use strict";
-const friendsName = ["Usama", "Khalid", "Amjad", "Ather", "Noman"];
-for (let i = 0; i < friendsName.length; i++) {
-    console.log(friendsName[i]);
+const names = ["Usama", "Khalid", "Amjad", "Ather", "Noman"];
+for (let i = 0; i < names.length; i++) {
+    console.log(names[i]);
 }
-friendsName.map((ele) => {
-    console.log(ele);
-});
+// names.map((ele) => {
+//   console.log(ele);
+// });

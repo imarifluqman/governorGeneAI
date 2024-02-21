@@ -43,7 +43,7 @@ console.log(
 console.log(`You are inviting ${dinnerGuests.length} people to dinner.`);
 
 for (let j = 0; j < dinnerGuests.length; j++) {
-  if (dinnerGuests.length > 2) {
+  if (dinnerGuests.length > 0) {
     const removedGuest: string = dinnerGuests.pop()!;
     console.log(`Sorry, ${removedGuest}, we can't invite you to dinner.`);
   }
